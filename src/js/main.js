@@ -6,8 +6,7 @@ import "../scss/main.scss";
 import "../scss/navbar.scss";
 
 // Load images
-import "../partials/assets/cloud1.png";
-import "../partials/assets/cloud2.png";
+import "../partials/navbar/assets/home.png";
 
 // Load html
-import "../partials/navbar.html";
+import "../partials/navbar/navbar.html";

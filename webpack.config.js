@@ -82,10 +82,7 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "assets/[hash][ext]"
-        }
+        type: "asset/resource"
       }
     ]
   },
@@ -109,7 +106,7 @@ module.exports = {
     }),
     new HtmlWebpackPartialsPlugin([
       {
-        path: "./src/partials/navbar.html"
+        path: "./src/partials/navbar/navbar.html"
       }
     ]),
     new webpack.ProvidePlugin({
