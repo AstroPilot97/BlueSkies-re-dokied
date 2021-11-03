@@ -1,0 +1,25 @@
+.about-wrapper {
+  overflow: hidden;
+
+  .cloud-1-path {
+    filter: blur(1px);
+    animation: animateCloud 30s linear infinite;
+    transform: scale(0.8);
+    position: relative;
+  }
+
+  .cloud-2-path {
+    filter: blur(3px);
+    animation: animateCloud 50s linear infinite;
+    transform: scale(0.7);
+  }
+
+  @keyframes animateCloud {
+    0% {
+      margin-left: -1100px;
+    }
+    100% {
+      margin-left: 100%;
+    }
+  }
+}

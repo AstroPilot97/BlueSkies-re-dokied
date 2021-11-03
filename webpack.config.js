@@ -82,7 +82,10 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource"
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]"
+        }
       }
     ]
   },
@@ -107,6 +110,9 @@ module.exports = {
     new HtmlWebpackPartialsPlugin([
       {
         path: "./src/partials/navbar/navbar.html"
+      },
+      {
+        path: "./src/partials/about/about.html"
       }
     ]),
     new webpack.ProvidePlugin({
